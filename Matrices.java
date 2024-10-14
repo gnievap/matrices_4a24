@@ -42,5 +42,16 @@ public class Matrices {
         renglones = Integer.parseInt(entrada);
         // Construyendo la matriz2
         matriz2 = new int[renglones][];
+        for ( int i = 0; i < matriz2.length; i++ ){
+            System.out.println("Escriba columnas para el renglón " + i + ": ");
+            entrada = bufer.readLine();
+            columnas = Integer.parseInt(entrada);
+            matriz2[i] = new int[columnas];
+            numero = 1;
+            for ( int j = 0; j < matriz2[i].length; j++ ){
+                matriz2[i][j] = numero;
+                numero++;
+            } 
+        }
     }
 }
